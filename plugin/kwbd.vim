@@ -77,7 +77,7 @@ function! s:kwbd()
   endif
 
   " delete buffer
-  if buflisted(savedbuf) || savedbuf == bufnr("%")
+  if buflisted(savedbuf) || savedbuf ==# bufnr('%')
     execute savedbuf . 'bdelete!'
   endif
 
